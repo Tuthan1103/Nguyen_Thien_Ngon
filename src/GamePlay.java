@@ -10,7 +10,7 @@ public class GamePlay {
         vatPham[4] = new CayGayChienThan();
     }
     public void hienThiThongTinVatPham(){
-        System.out.println("Thông tin các vật phẩm Spon thu hoạch:");
+        System.out.println("Thông tin các vật phẩm Spon cần thu hoạch:");
         for (VatPham vp: vatPham){
             System.out.println(vp.toString());
         }
