@@ -30,13 +30,13 @@ public class GamePlay {
     }
 
     public boolean kiemTraSponCoDuVang(double soVangThuDuoc){
-        double maxVangCan = 0;
+        double tongVangCan = 0;
         for (VatPham vp: vatPham){
             double soVangCan = vp.tinhTongSoVangCan();
-            if(soVangCan>maxVangCan){
-                maxVangCan=soVangCan;
-            }
+
+               tongVangCan += soVangCan;
+
         }
-        return soVangThuDuoc >= maxVangCan;
+        return soVangThuDuoc >= tongVangCan;
     }
 }
